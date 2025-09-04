@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen AI - Empowering Citizens Through AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Citizen AI</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('chat') }}">Chat</a></li>
+                <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Empowering Citizens Through AI</h2>
+        <p>Citizen AI is an intelligent platform designed to revolutionize how citizens interact with government services. Our AI assistant provides real-time responses to your inquiries, analyzes feedback, and helps improve civic engagement.</p>
+        <a href="{{ url_for('login') }}" class="btn">Get Started</a>
+    </section>
+
+    <div class="container">
+        <section class="section">
+            <h2>How Citizen AI Works</h2>
+            <p>Our platform leverages advanced AI technologies to create a seamless experience between citizens and government services. Here's how it works:</p>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+                <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                    <h3>Ask Questions</h3>
+                    <p>Get instant answers to your questions about government services, policies, and procedures through our AI-powered chat assistant.</p>
+                </div>
+                
+                <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                    <h3>Provide Feedback</h3>
+                    <p>Share your thoughts and experiences with government services. Our sentiment analysis helps identify areas for improvement.</p>
+                </div>
+                
+                <div style="flex: 1; min-width: 250px; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                    <h3>Report Issues</h3>
+                    <p>Report civic issues directly through our platform. Government officials can track and respond to concerns efficiently.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Benefits of Citizen AI</h2>
+            <ul>
+                <li><strong>24/7 Availability:</strong> Access government information anytime, anywhere</li>
+                <li><strong>Improved Efficiency:</strong> Reduce wait times for common inquiries</li>
+                <li><strong>Data-Driven Insights:</strong> Help government agencies understand citizen needs</li>
+                <li><strong>Enhanced Transparency:</strong> Clear communication between citizens and government</li>
+                <li><strong>Better Services:</strong> Continuous improvement based on citizen feedback</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Citizen AI. Empowering smarter civic engagement through artificial intelligence.</p>
+    </footer>
+</body>
+</html>
